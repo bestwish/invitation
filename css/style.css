@@ -1,0 +1,49 @@
+body {
+	font-family: 'Helvetica Neue', Helvetica, Arial, Sans-serif;
+	background-color: #F8EFE7;
+	background-image: url(../img/invitation-bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: #38B6BB;
+}
+
+header,
+main,
+footer,
+section {
+	display: block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin-top: 0;
+}
+
+main {
+	width: 720px;
+	margin: 100px auto;
+}
+
+section {
+	margin-bottom: 20px;
+	padding: 40px;
+	background-color: #FFF;
+	box-shadow: 0 0 10px #888;
+	opacity: 0.5;
+}
+
+.invite-text {
+	text-align: center;
+}
+
+.invite-text h1 {
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+
+.invite-text h2 {
+	margin-top: 0;
+}
+
+.invite-text p {
+	line-height: 30px;
+}
