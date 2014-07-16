@@ -1,10 +1,14 @@
+@font-face {
+	font-family: 'neon';
+	src: url('../font/neon.ttf') format('truetype');
+}
+
 body {
 	font-family: 'Helvetica Neue', Helvetica, Arial, Sans-serif;
-	background-color: #F8EFE7;
+	background-color: #ECDCC2;
 	background-image: url(../img/invitation-bg.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
-	color: #38B6BB;
 }
 
 header,
@@ -20,23 +24,46 @@ h1, h2, h3, h4, h5, h6 {
 
 main {
 	width: 720px;
-	margin: 100px auto;
+	margin: 50px auto;
+	padding: 0 50px;
+	overflow: hidden;
+	opacity: 0.8;
+}
+
+.block {
+	overflow: hidden;
+	box-shadow: 0 0 8px #CCC;
+	margin-bottom: 30px;
 }
 
 section {
-	margin-bottom: 20px;
-	padding: 40px;
-	background-color: #FFF;
-	box-shadow: 0 0 10px #888;
-	opacity: 0.5;
+	background-color: #FFFFFF;
+	color: #997061;
+	padding: 30px 40px;
 }
 
+.header {
+	-webkit-border-radius: 8px 8px 0 0;
+	-moz-border-radius: 8px 8px 0 0;
+	-ms-border-radius: 8px 8px 0 0;
+	-o-border-radius: 8px 8px 0 0;
+	border-radius: 8px 8px 0 0;
+}
+
+.invite-title,
 .invite-text {
 	text-align: center;
 }
 
-.invite-text h1 {
-	margin-bottom: 10px;
+.invite-title {
+	font-family: 'neon';
+	margin-bottom: 0;
+	background-color: #FF656E;
+	color: #F6F9F6;
+}
+
+.invite-title h1 {
+	margin: 0;
 	text-transform: uppercase;
 }
 
@@ -46,4 +73,9 @@ section {
 
 .invite-text p {
 	line-height: 30px;
+	margin: 0;
+}
+
+.invite-position dl{
+	margin: 0;
 }
