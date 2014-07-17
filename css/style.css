@@ -81,12 +81,15 @@ section {
 }
 
 .count {
-	font-family: 'neon';
+	font-family: Microsoft Yahei;
 	text-align: center;
 }
 
 .invite-count b {
+	display: inline-block;
+	text-align: right;
 	font-size: 54px;
+	width: 70px;
 }
 
 .invite-count small {
