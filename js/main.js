@@ -1,13 +1,19 @@
 (function ($, undefined) {
 	var weddingDate = new Date("2014/8/13 12:00:00").getTime();
+	function formatTime (time) {
+		return ('0' + time).slice(-2);
+	}
 
 	setInterval(function () {
-		var count = weddingDate - (new Date()).getTime();
-		var second = [86400000, 3600000, 60000, 1000];
-		$.each('date hours minutes seconds'.split(' '), function (index, key) {
-			var methodName = 'get' + key[0].toLocaleUpperCase() + key.slice(1);
-			var num = ('0' + new Date(count)[methodName]()).slice(-2);
-			$('.count-' + key).html(num);
+		var count = Math.ceil((weddingDate - (new Date()).getTime())/1000);
+		var date = {
+			day: formatTime(Math.floor(count/86400)),
+			hour: formatTime(Math.floor((count%86400)/3600)),
+			minute: formatTime(Math.floor((count%3600)/60)),
+			second: formatTime(Math.floor(count%60))
+		};
+		$.each('day hour minute second'.split(' '), function (index, key) {
+			$('.count-' + key).html(date[key]);
 		});
 	}, 250);
 })(jQuery);
