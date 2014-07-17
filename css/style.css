@@ -79,3 +79,16 @@ section {
 .invite-position dl{
 	margin: 0;
 }
+
+.count {
+	font-family: 'neon';
+	text-align: center;
+}
+
+.invite-count b {
+	font-size: 54px;
+}
+
+.invite-count small {
+	font-size: 18px;
+}
