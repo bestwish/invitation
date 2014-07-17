@@ -1,5 +1,5 @@
 (function ($, undefined) {
-	var weddingDate = new Date("2014-8-13 12:00:00").getTime();
+	var weddingDate = new Date("2014/8/13 12:00:00").getTime();
 
 	setInterval(function () {
 		var count = weddingDate - (new Date()).getTime();
