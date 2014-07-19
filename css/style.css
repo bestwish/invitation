@@ -87,6 +87,17 @@ section {
 	position: relative;
 }
 
+.invite-text a,
+.invite-text a:link,
+.invite-text a:active,
+.invite-text a:hover {
+	color: #FF656E;
+}
+
+.invite-text a {
+	float: right;
+}
+
 .invite-text h2 {
 	margin-top: 0;
 	padding-left: 180px;
