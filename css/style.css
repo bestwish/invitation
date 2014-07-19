@@ -120,6 +120,12 @@ section {
 	margin: 0;
 }
 
+.position-bailu,
+.position-shida {
+	width: 100%;
+	height: 300px;
+}
+
 .invite-count {
 	position: relative;
 }
