@@ -3,6 +3,13 @@
 	src: url('../font/neon.ttf') format('truetype');
 }
 
+html,
+body {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
 body {
 	font-family: 'Helvetica Neue', Helvetica, Arial, Sans-serif;
 	background-color: #ECDCC2;
@@ -22,6 +29,10 @@ h1, h2, h3, h4, h5, h6 {
 	margin-top: 0;
 }
 
+dd {
+	margin: 0;
+}
+
 strong {
 	font-weight: normal;
 }
@@ -29,7 +40,6 @@ strong {
 main {
 	width: 70%;
 	margin: 50px auto;
-	padding: 0 50px;
 	overflow: hidden;
 	opacity: 0.8;
 }
@@ -98,4 +108,23 @@ section {
 
 .invite-count small {
 	font-size: 18px;
+}
+
+@media all and (max-width: 641px) {
+	main {
+		width: 90%;
+	}
+
+	section {
+		padding: 30px 5px;
+	}
+
+	.invite-text p {
+		font-size: 12px;
+	}
+
+	.invite-count b {
+		font-size: 32px;
+		width: 40px;
+	}
 }
