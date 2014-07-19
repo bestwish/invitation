@@ -81,13 +81,26 @@ section {
 	text-transform: uppercase;
 }
 
+.invite-text {
+	position: relative;
+}
+
 .invite-text h2 {
 	margin-top: 0;
+	padding-left: 180px;
 }
 
 .invite-text p {
+	padding-left: 180px;
 	line-height: 30px;
 	margin: 0;
+}
+
+.text-icon {
+	position: absolute;
+	z-index: 100;
+	top: 10px;
+	left: 10px;
 }
 
 .invite-position dl{
@@ -110,6 +123,25 @@ section {
 	font-size: 18px;
 }
 
+@media all and (min-width: 641px) and (max-width: 960px) {
+	main {
+		width: 80%;
+	}
+
+	section {
+		padding: 30px 15px;
+	}
+
+	.invite-text p {
+		font-size: 14px;
+	}
+
+	.invite-count b {
+		font-size: 48px;
+		width: 60px;
+	}
+}
+
 @media all and (max-width: 641px) {
 	main {
 		width: 90%;
@@ -121,10 +153,19 @@ section {
 
 	.invite-text p {
 		font-size: 12px;
+		padding-left: 0px;
 	}
 
 	.invite-count b {
 		font-size: 32px;
 		width: 40px;
+	}
+
+	.text-icon {
+		position: static;
+	}
+
+	.invite-text h2 {
+		padding-left: 0px;
 	}
 }
