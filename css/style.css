@@ -16,6 +16,7 @@ body {
 	background-image: url(../img/invitation-bg.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
+	background-position: center;
 }
 
 header,
