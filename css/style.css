@@ -23,6 +23,7 @@ header,
 main,
 footer,
 section {
+	overflow: hidden;
 	display: block;
 }
 
