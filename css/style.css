@@ -70,7 +70,7 @@ section {
 }
 
 .invite-title {
-	font-family: 'neon';
+	font-family: 'neon', 'Helvetica Neue', Helvetica, Arial, Sans-serif;
 	margin-bottom: 0;
 	background-color: #FF656E;
 	color: #F6F9F6;
