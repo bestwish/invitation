@@ -170,6 +170,37 @@ section {
 	text-align: center;
 }
 
+.data-button {
+	display: block;
+	height: 80px;
+	margin: 0 25px;
+	line-height: 80px;
+	font-size: 24px;
+	color: #FF656E;
+}
+
+.data-button:hover {
+	background-color: #FFE5EF;
+}
+
+.data-button-bg {
+	font-size: 32px;
+	color: white;
+	background-color: #FF656E;
+}
+
+.data-button-bg:hover {
+	background-color: #FF858E;
+}
+
+a.data-button,
+a.data-button:link,
+a.data-button:active,
+a.data-button:visited {
+	text-decoration: none;
+	text-align: center;
+}
+
 @media all and (min-width: 641px) and (max-width: 960px) {
 	main {
 		width: 80%;
