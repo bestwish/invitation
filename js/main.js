@@ -2,7 +2,7 @@
 	//title
 	var param = window.location.search.match(/(r=)([\%\w\d]+)+/g);
 	if (param) {
-		document.title = window.decodeURI(param[0].split('=')[1]) + '诚邀您参加儿子婚礼';
+		document.title = window.decodeURI(param[0].split('=')[1]);
 	}
 
 	//count
