@@ -1,4 +1,11 @@
 (function ($, undefined) {
+	//title
+	var param = window.location.search.match(/(r=)([\%\w\d]+)+/g);
+	if (param) {
+		document.title = window.decodeURI(param[0].split('=')[1]);
+	}
+
+	//count
 	var weddingDate = new Date('2014/8/13 12:00:00').getTime();
 	function formatTime (time) {
 		return ('0' + time).slice(-2);
