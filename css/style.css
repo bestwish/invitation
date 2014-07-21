@@ -72,7 +72,7 @@ section {
 }
 
 .invite-title {
-	font-family: 'neon';
+	font-family: 'neon', 'Helvetica Neue', Helvetica, Arial, Sans-serif;
 	margin-bottom: 0;
 	background-color: #FF656E;
 	color: #F6F9F6;
@@ -95,8 +95,11 @@ section {
 }
 
 .invite-text a {
-	float: right;
-}
+	position: absolute;
+	z-index: 110;
+	bottom: 10px;
+	right: 10px;
+}}
 
 .invite-text h2 {
 	margin-top: 0;
@@ -118,6 +121,12 @@ section {
 
 .invite-position dl{
 	margin: 0;
+}
+
+.position-bailu,
+.position-shida {
+	width: 100%;
+	height: 300px;
 }
 
 .invite-count {
@@ -155,6 +164,10 @@ section {
 
 .invite-count small {
 	font-size: 18px;
+}
+
+.main-image {
+	text-align: center;
 }
 
 @media all and (min-width: 641px) and (max-width: 960px) {
@@ -211,5 +224,9 @@ section {
 	.count-bride,
 	.count-groom {
 		width: 35%;
+	}
+
+	.main-image img {
+		width: 100%;
 	}
 }
