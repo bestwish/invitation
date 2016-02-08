@@ -7,14 +7,23 @@
 
 	//count
 	var weddingDate = new Date('2014/8/13 12:00:00').getTime();
-	function formatTime (time) {
-		return ('0' + time).slice(-2);
+	function formatTime (time, digit) {
+		return ('0' + time).slice(0 - (digit || 2));
+	}
+
+	function setMessage (count) {
+		if (count < 0) {
+			count = 0 - count;
+			$('.invite-count').addClass('success');
+		}
+		return count;
 	}
 
 	setInterval(function () {
-		var count = Math.ceil((weddingDate - (new Date()).getTime())/1000);
+		var during = Math.ceil((weddingDate - (new Date()).getTime())/1000);
+		var count = setMessage(during);
 		var date = {
-			day: formatTime(Math.floor(count/86400)),
+			day: Math.floor(count/86400),
 			hour: formatTime(Math.floor((count%86400)/3600)),
 			minute: formatTime(Math.floor((count%3600)/60)),
 			second: formatTime(Math.floor(count%60))
@@ -53,7 +62,7 @@
 	var marker = {
 		Bailu: new qq.maps.Marker({
 			map: driveMap,
-			position: dot.Bailu		
+			position: dot.Bailu
 		}),
 		Dizhai: new qq.maps.Marker({
 			map: driveMap,
