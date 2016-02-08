@@ -166,6 +166,19 @@ section {
 	font-size: 18px;
 }
 
+.success-show,
+.success .success-hide {
+	display: none;
+}
+
+.success .success-show {
+	display: block;
+}
+
+.invite-count.success b {
+	width: auto;
+}
+
 .main-image {
 	text-align: center;
 }
